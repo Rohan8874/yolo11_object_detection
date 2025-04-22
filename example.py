@@ -1,7 +1,7 @@
 from ultralytics import YOLO
  
 model = YOLO("yolo11l.pt")
-results = model("test_img.jpg")
+results = model("test_img4.jpg")
 
 for result in results:
     boxes = result.boxes
@@ -10,4 +10,4 @@ for result in results:
     probs = result.probs
     obb = result.obb
 
-    result.save(filename="result1.jpg")
+    result.save(filename="result4.jpg")
